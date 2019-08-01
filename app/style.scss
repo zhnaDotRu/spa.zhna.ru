@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,
+body {
+  background-color: #efeff4;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.tariffs {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+
+  &.mod-center {
+    justify-content: center;
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 950px;
+  }
+
+  @media (max-width: 640px) {
+    justify-content: center;
+    max-width: 630px;
+  }
+}
+
+.tariff {
+  background-color: #fff;
+  border-bottom: solid 1px #e7e7e7;
+  border-top: solid 1px #e7e7e7;
+  flex-basis: 320px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0 10px 17px 10px;
+
+  @media (max-width: 1023px) {
+    flex-basis: 300px;
+  }
+
+  @media (max-width: 640px) {
+    flex-basis: 320px;
+    margin: 0 0 17px 0;
+  }
+}
+
+.tariff-link {
+  background: transparent;
+  -webkit-focus-ring-color: transparent;
+  font-size: 100%;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+.tariff-headline {
+  border-bottom: solid 1px #e7e7e7;
+  color: #82c12b;
+  font-weight: 500;
+  margin: 0 0 0 12px;
+  padding: 10px 0 7px 0;
+}
+
+.tariff-info {
+  border-bottom: solid 1px #e7e7e7;
+  box-sizing: border-box;
+  color: #4d575d;
+  padding: 0 0 2px 0;
+  position: relative;
+
+  &.mod-arrow {
+    &::before {
+      background-image: url(./img/right_arrow.png);
+      background-position-x: left;
+      background-position-y: center;
+      background-repeat: no-repeat;
+      content: '';
+      height: 100%;
+      position: absolute;
+      right: 0;
+      width: 20px;
+    }
+  }
+}
+
+.tariff-info-speed {
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 27px;
+  margin: 7px 0 0 0;
+  padding: 0 12px 0 12px;
+  text-align: center;
+
+  &.mod-blue {
+    background-color: #0075d9;
+  }
+
+  &.mod-orange {
+    background-color: #e74807;
+  }
+
+  &.mod-brown {
+    background-color: #70603e;
+  }
+}
+
+.tariff-info-price {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 8px 0 5px 12px;
+}
+
+.tariff-info-description {
+  font-size: 13px;
+  line-height: 6px;
+  margin: 10px 0 10px 12px;
+
+  &.mod-gray {
+    color: #aaa;
+  }
+}
+
+.tariff-sknt-link {
+  color: #017aff;
+  display: block;
+  font-size: 13px;
+  margin: 10px 0 0 12px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.tariff-button {
+  background-color: #82c12b;
+  color: #fff;
+  cursor: pointer;
+  height: 35px;
+  line-height: 35px;
+  margin: 5px 12px 5px 12px;
+  text-align: center;
+}
+
+.header {
+  background-color: #fff;
+  border-bottom: solid 1px #e7e7e7;
+  height: 36px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.header-h1 {
+  font-size: 16px;
+  line-height: 36px;
+  margin: 0;
+  text-align: center;
+}
+
+.header-back {
+  background-image: url(./img/back_button.png);
+  background-position-x: left;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 60px;
+}
